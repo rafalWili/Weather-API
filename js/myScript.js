@@ -90,7 +90,7 @@ $('select').change(function() {
     function animateFoto(){
         $mainContainer.animate({opacity:0 },500, function(){
             $(this).css({
-                'background-image': 'url("forecast/'+ $selectorOptionValue +'.jpg")',
+                'background-image': 'url("https://rawgit.com/rafalWili/Weather-API/master/forecast/'+ $selectorOptionValue +'.jpg")',
                 'color' : colorCzionki
               })
               .animate({opacity:1},500);
