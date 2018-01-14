@@ -1,0 +1,137 @@
+html, body{
+    margin: 0;
+    padding: 0;
+   
+}
+#mainContainer{
+    width:100vw;
+    height: 100vh;
+    background-image: url('../forecast/sky1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+h2,h3{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+h1{
+    text-shadow: 1px 1px #ffffff;
+    margin-top: 5%;
+}
+
+
+
+@media (max-width: 575px) {
+
+    .input-group{
+        display: block;
+        width: 100vw;
+    }
+
+    .input-group > input{
+        width: 80vw;
+        margin-left: 10%;
+        margin-bottom: 15px;
+    }
+
+    .input-group > button{
+        width: 80vw;
+        margin-left: 10%;
+    }
+
+    #formSelect,  #formSelect > div  {
+        margin-left: 0 !important;
+    }
+
+  
+    #formSelect > div label{
+        width: 80vw;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    #formSelect > div select{
+        width: 80vw;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        text-align: center;
+      
+
+    }
+
+
+
+ }
+
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .input-group{
+        display: block;
+        width: 100vw;
+    }
+
+    .input-group > input{
+        width: 80vw;
+        margin-left: 10%;
+        margin-bottom: 15px;
+    }
+
+    .input-group > button{
+        width: 80vw;
+        margin-left: 10%;
+    }
+
+    #formSelect,  #formSelect > div  {
+        margin-left: 0 !important;
+    }
+
+  
+    #formSelect > div label{
+        width: 80vw;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    #formSelect > div select{
+        width: 80vw;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        text-align: center;
+      
+
+    }
+
+
+
+
+ }
+
+ @media (min-width: 768px) {
+
+    .input-group{
+        float: left;
+        width: 40%;
+    }
+
+#formSelect{
+    float: right;
+    width: 45%;
+ 
+}
+
+#selectorOption{
+    margin-left: 10%;
+}
+
+
+
+ }
