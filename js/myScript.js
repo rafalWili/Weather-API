@@ -20,6 +20,8 @@
             var city = $('#inputField').val();
             var apiUrl = api + city  + key + metric ;
 
+            console.log(apiUrl);
+
             if(city === ""){
                 console.log('nie podales miasta');
             }else{
