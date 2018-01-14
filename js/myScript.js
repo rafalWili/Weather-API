@@ -39,23 +39,23 @@
             var forecastCity = weatherCheck.weather[0].main;
 
             if( forecastCity === "Clouds"   ){
-                 fotoSpot.setAttribute("src", "forecast/clouds.png");
+                 fotoSpot.setAttribute("src", "https://rawgit.com/rafalWili/Weather-API/master/forecast/clouds.png");
                            
             }else  if( forecastCity === "Rain" || forecastCity === "rain"    ){
-                fotoSpot.setAttribute("src", "forecast/rain.png");
+                fotoSpot.setAttribute("src", "https://rawgit.com/rafalWili/Weather-API/master/forecast/rain.png");
             }else  if( forecastCity === "Clear"   ){
-                fotoSpot.setAttribute("src", "forecast/clear.png");
+                fotoSpot.setAttribute("src", "https://rawgit.com/rafalWili/Weather-API/master/forecast/clear.png");
             }else  if( forecastCity === "Mist"   ){
-                fotoSpot.setAttribute("src", "forecast/fog.png");
+                fotoSpot.setAttribute("src", "https://rawgit.com/rafalWili/Weather-API/master/forecast/fog.png");
             }else  if( forecastCity === "Snow"   ){
-                fotoSpot.setAttribute("src", "forecast/snow.png");
+                fotoSpot.setAttribute("src", "https://rawgit.com/rafalWili/Weather-API/master/forecast/snow.png");
             }else  if( forecastCity === "Haze"   ){
-                fotoSpot.setAttribute("src", "forecast/fog.png");
+                fotoSpot.setAttribute("src", "https://rawgit.com/rafalWili/Weather-API/master/forecast/fog.png");
             }else{
-                fotoSpot.setAttribute("src", "forecast/clauds.png");
+                fotoSpot.setAttribute("src", "https://rawgit.com/rafalWili/Weather-API/master/forecast/clauds.png");
             }
 
-            if( $('#mainContainer').css( 'background-image','url("forecast/sky1.jpg")')  ){
+            if( $('#mainContainer').css( 'background-image','url("https://rawgit.com/rafalWili/Weather-API/master/forecast/sky1.jpg")')  ){
                 console.log('to jest sky');
             }else{
 
@@ -125,20 +125,6 @@ $('#inputField').on("focus", function(){
 
 var oknoSzerokosc = window.innerWidth;
 console.log(oknoSzerokosc);
-
-
-// $(window).resize(function(){
-
-
-//     console.log('zmiana okna');
-//     if( oknoSzerokosc < 768 ){
-//         $('#inputHolder').addClass('col-sm-12');
-//     }
-
-// });
-
-
-
 
 
 })(); //self started function
