@@ -20,8 +20,6 @@
             var city = $('#inputField').val();
             var apiUrl = api + city  + key + metric ;
 
-            console.log(apiUrl);
-
             if(city === ""){
                 console.log('nie podales miasta');
             }else{
@@ -80,6 +78,8 @@ $('select').change(function() {
     var apiUrl = api + city  + key + metric ;
     $mainContainer = $('#mainContainer');
     var colorCzionki ;
+    
+    console.log(city);
 
     function showCity(){
         $.getJSON( apiUrl, function( data ) {           
@@ -100,7 +100,7 @@ $('select').change(function() {
 
     }
 
-    if($selectorOptionValue === "London" ){
+    if($selectorOptionValue === "London"  ){
         colorCzionki = "#000000";
         showCity(colorCzionki);
     }else if($selectorOptionValue === "Tokyo" ){
